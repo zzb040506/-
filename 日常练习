@@ -1,0 +1,18 @@
+//使用函数递归实现阶乘
+int math(int n)
+{
+	int ret;
+	if (n== 0 || n == 1)
+		ret = 1;
+	else
+	n = n * math(n-1);
+	ret = n;
+	return ret;
+}
+int main()
+{int n = 0;
+scanf("%d", &n);
+int m=math(n);
+printf("%d\n", m);
+	return 0;
+}
