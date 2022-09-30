@@ -1,0 +1,19 @@
+int main()
+{
+	char str[] = "dlrowlleh";
+	char* a = str;
+	char* b = str;
+	while (*b)
+		b++;
+	b--;
+	while (a <= b)
+	{
+		int t = *a;
+		*a = *b;
+		*b = t;
+		a++;
+		b--;
+	}
+	printf("%s\n", str);
+	return 0;
+}
